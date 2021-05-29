@@ -1,0 +1,19 @@
+{
+  "name": "skillalexanodejsexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.10.2",
+    "ask-sdk-express-adapter": "^2.10.2",
+    "ask-sdk-model": "^1.35.1",
+    "express": "^4.17.1",
+    "ngrok": "^4.0.1"
+  }
+}
