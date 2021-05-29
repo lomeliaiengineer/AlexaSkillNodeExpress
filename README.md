@@ -14,4 +14,6 @@ Node.js application in express for the backend of an Alexa skill.
     npm start
 ```
 
-After running the project, an URL will display in the console, copy and paste it in the Alexa console on the endpoint section and add '/alexa', your url should look like this https://c8f76a28568a.ngrok.io/alexa.
+After running the project, an URL will display in the console, copy and paste it in the Alexa console on the endpoint section and add '/alexa'.
+
+Your url should look like this https://xxxxxx.ngrok.io/alexa.
