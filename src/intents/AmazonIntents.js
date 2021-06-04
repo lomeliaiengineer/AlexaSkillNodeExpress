@@ -16,7 +16,7 @@ const HelpIntent = {
         return request.type === 'IntentRequest' && request.intent.name === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
-        const speechText = 'Puedes decir: hola mundo.';
+        const speechText = handlerInput.t('HELP');
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -32,7 +32,7 @@ const CancelAndStopIntentHandler = {
                 || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent');
     },
     handle(handlerInput) {
-        const speechText = '¡Chao! ¡Gracias por usar nuestra skill!.';
+        const speechText = handlerInput.t('GOODBYE');
 
         return handlerInput.responseBuilder
             .speak(speechText)
@@ -47,7 +47,7 @@ const UnhandledIntent = {
         return true;
     },
     handle(handlerInput) {
-        const speechText = 'Lo siento, no entiendo lo que quieres decir, intenta preguntarme de otra forma';
+        const speechText = handlerInput.t('UNHANDLED');
 
         return handlerInput.responseBuilder
             .speak(speechText)
